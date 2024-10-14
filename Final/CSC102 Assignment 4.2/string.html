@@ -1,0 +1,144 @@
+<!-- Eugene Hayes, 09/30/2024 -->
+ <!-- HTML 5 -->
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>CSC102 Palindrome Checker</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+/* Customize the text and images to appear as wanted */
+        h1 {
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: brown;
+        }
+        p {
+            text-align: center;
+            font-stretch: extra-expanded;
+            font-size: large;
+        }
+        input {
+            text-align: center;
+        }
+        palindromeImage {
+            text-align: center;
+        }
+        palindromBob {
+            float: right;
+        }
+        palindromGif {
+            text-align: right;
+        }
+        #hiddenSection {
+            display: none;
+        }
+        #secretButton {
+            display: none;
+            text-align: center;
+        }
+        #hiddenZipCode {
+            display: none;
+        }
+
+        #imageContainer {
+            text-align: center;
+        }
+        #normal {
+            display: block;
+        }
+        #overall {
+            display: block;
+        }
+        #secretButton {
+            display: none;
+        }
+
+
+
+    </style>
+    <body>
+
+       
+        
+
+
+<!-- Top of page, title -->
+    <h1 id="header">Palindrome Checker</h1>
+
+<!-- Prompt user to enter a palindrome, set up text entry -->
+<section id="normal">
+    <p>Enter a Palindrome and I will check it, it can be a word or a phrase:</p>
+    <p><input type="text" id="userInput" placeholder="Enter here:"></p>
+    <p><button onclick="checkPalindrom()">Check It!</button></p>
+</section>
+
+<!-- set up img id's and sources -->
+     <div style="text-align: center;">
+    <img id= "palindromBob" src= "palindrome-bob.png">
+    </div>
+
+    <!-- Secret Message Section -->
+    <!-- Header for secret message and prompt to enter first name -->
+    <!-- Button to reveal hidden section -->
+    <button id="secretButton" onclick="revealSecret()">Secret Message!</button> 
+
+<section  id="overall">
+
+<section id="hiddenSection" class="hidden-Section"> 
+    <h2>Secret Message!</h2>
+    <p>We must see first if you are authorized for this message;</p>
+    <p>Enter your first name</p>
+    <p><input type="text" id="nameInput" placeholder="First name:"></p>
+
+    <!-- Prompt to enter last name in text box -->
+    <p>Enter your last name</p>
+    <p><input type="text" id="lastName" placeholder="Last name:"></p>
+    <p><button onclick="checkInfo()">Submit</button></p>
+
+</section>
+
+<!-- Prompt to enter zipcode into text box -->
+<section id="hiddenZipCode" class="hidden-Section">
+    <p>Enter your zipcode</p>
+    <p><input type="text" id="zipCode" placeholder="Zipcode:"></p>
+    <p><button onclick="checkZip()">Submit!</button></p>
+</section>
+</section>
+<p id="secretMessage"></p>
+
+<audio id="backgroundMusic" controls autoplay loop>
+    <source src="background.mp3" type="audio/mp3">
+</audio>
+
+
+<h2>Navigation</h2>
+<a href="../CSC102 Assignment 4.1/index.html">Home</a><br>
+<a href="../CSC102 Assignment 2.1/boards.html">Boards</a><br>
+<a href="../CSC102 Assignment 2.2/game.html">Craps</a><br>
+<a href="../CSC102 Assignment 3.1/string.html">Palindrome Checker</a><br>
+<a href="../CSC102 Assignment 3.2/string.html">Input Validation</a><br>
+<a href="../CSC102 Assignment 4.1/index.html">Event Driven Programming</a><br>
+<a href="../CSC102 Assignment 4.2/string.html">Embedded Audio</a><br>
+<a href="../Final Project/table.html">Information Table</a><br>
+
+
+
+
+
+</nav>
+
+<!-- js script embedded -->
+    <script src="checkPalindrom.js"></script>
+
+
+
+    
+</body>
+</html>
